@@ -29,14 +29,12 @@ export function WithAsync<T>({
       });
   }, [promise]);
 
-  return useMemo(() => {
-    switch (status) {
-      case "loading":
-        return loading;
-      case "rejected":
-        return errorComponent(error);
-      case "resolved":
-        return children(value!);
-    }
-  }, [status, value, error]);
+  switch (status) {
+    case "loading":
+      return loading;
+    case "rejected":
+      return errorComponent(error);
+    case "resolved":
+      return children(value!);
+  }
 }
