@@ -16,6 +16,7 @@ import {
   useAlerts,
   usePostAlert,
 } from "./components/GlobalAlertProvider";
+import { Info } from "./components/Info";
 import { Switch } from "./components/Switch";
 import { WithAsync } from "./components/WithAsync";
 import { excelHelper, SelectionStatus } from "./excelHelper";
@@ -129,6 +130,7 @@ const App_: FC = () => {
 
   return (
     <FluentProvider theme={webLightTheme} className={classes.container}>
+      <Info />
       {Main}
 
       <div className={classes.spacer}></div>
