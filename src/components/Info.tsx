@@ -44,7 +44,7 @@ export const Info = () => {
           appearance="subtle"
           icon={<Chat20Filled />}
           as="a"
-          href="sip:dingnan@microsoft.com"
+          href="sip:nandin.borjigin@microsoft.com"
         />
         <Button
           appearance="subtle"
