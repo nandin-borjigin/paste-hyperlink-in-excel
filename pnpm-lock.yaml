@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fluentui/react-components': ^9.7.1
+  '@types/node': ^18.11.10
   '@types/office-js': ^1.0.302
   '@types/react': ^18.0.24
   '@types/react-dom': ^18.0.8
@@ -20,12 +21,13 @@ dependencies:
   scheduler: 0.23.0
 
 devDependencies:
+  '@types/node': 18.11.10
   '@types/office-js': 1.0.302
   '@types/react': 18.0.26
   '@types/react-dom': 18.0.9
   '@vitejs/plugin-react': 2.2.0_vite@3.2.4
   typescript: 4.9.3
-  vite: 3.2.4
+  vite: 3.2.4_@types+node@18.11.10
   vite-plugin-mkcert: 1.10.1_vite@3.2.4
 
 packages:
@@ -1495,6 +1497,10 @@ packages:
       '@octokit/openapi-types': 14.0.0
     dev: true
 
+  /@types/node/18.11.10:
+    resolution: {integrity: sha512-juG3RWMBOqcOuXC643OAdSA525V44cVgGV6dUDuiFtss+8Fk5x1hI93Rsld43VeJVIeqlP9I7Fn9/qaVqoEAuQ==}
+    dev: true
+
   /@types/office-js/1.0.302:
     resolution: {integrity: sha512-UhU+FOr3vzcpa4qjYwzeCGWuGFYycvbT1ukEXqseQ4WrjeoJS+CwfqFD2tJLUlm/W5i2jPoUWon7ty63O+a2Qw==}
     dev: true
@@ -1530,7 +1536,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.20.5
       magic-string: 0.26.7
       react-refresh: 0.14.0
-      vite: 3.2.4
+      vite: 3.2.4_@types+node@18.11.10
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2110,13 +2116,13 @@ packages:
       axios: 0.21.4_debug@4.3.4
       debug: 4.3.4
       picocolors: 1.0.0
-      vite: 3.2.4
+      vite: 3.2.4_@types+node@18.11.10
     transitivePeerDependencies:
       - encoding
       - supports-color
     dev: true
 
-  /vite/3.2.4:
+  /vite/3.2.4_@types+node@18.11.10:
     resolution: {integrity: sha512-Z2X6SRAffOUYTa+sLy3NQ7nlHFU100xwanq1WDwqaiFiCe+25zdxP1TfCS5ojPV2oDDcXudHIoPnI1Z/66B7Yw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -2141,6 +2147,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 18.11.10
       esbuild: 0.15.16
       postcss: 8.4.19
       resolve: 1.22.1

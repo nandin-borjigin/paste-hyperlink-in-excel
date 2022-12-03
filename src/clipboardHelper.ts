@@ -60,7 +60,7 @@ export const clipboardHelper: ClipboardHelper = {
     }
 
     if (hyperlinks.length > 0) {
-      return hyperlinks;
+      return hyperlinks.length === 1 ? hyperlinks[0] : hyperlinks;
     } else {
       return fallbackText || false;
     }
