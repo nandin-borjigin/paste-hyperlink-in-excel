@@ -13,6 +13,7 @@ const useStyles = makeStyles({
     display: "grid",
     gridTemplateColumns: "1fr auto",
     fontFamily: tokens.fontFamilyNumeric,
+    color: tokens.colorNeutralForeground4,
     alignItems: "center",
     ...shorthands.gap("8px", "0px"),
     "& span": {
